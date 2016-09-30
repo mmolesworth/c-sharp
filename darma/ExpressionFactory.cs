@@ -10,25 +10,16 @@ using System.Text;
 interface IExpressionFactory
 {
 	
-	FactType createFact();
-	Operator createOperator();
-	string	createValue();
+	IExpression createExpression();
 
 }
 
 public class BaseExpressionFactory:IExpressionFactory
 {
 	
-	public FactType createFact()
+	public IExpression createExpression()
 	{
-	}
-
-	public Operator createOperator()
-	{
-	}
-
-	public string	createValue()
-	{
+		return new BaseExpression();
 	}
 
 }
@@ -36,16 +27,9 @@ public class BaseExpressionFactory:IExpressionFactory
 public class ConditionExpressionFactory:IExpressionFactory
 {
 	
-	public FactType createFact()
+	public IExpression createExpression()
 	{
-	}
-
-	public Operator createOperator()
-	{
-	}
-
-	public string	createValue()
-	{
+		return new ConditionExpression();
 	}
 
 }

@@ -6,7 +6,15 @@ using System.Collections.Generic;
 using System.Text;
 
 
-class Operator
+public interface IOperator
+{
+	string Symbol		{ get; set; }
+	string Description	{ get; set; }
+
+}
+
+
+class StandardOperator
 {
 
 	public string Symbol { get; set; }

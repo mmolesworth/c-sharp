@@ -6,14 +6,23 @@ using System.Collections.Generic;
 using System.Text;
 
 
+public interface IExpression
+{	
 
-class Expression
+	IFactType 	Fact 	{ get; set; }
+	IOperator 	Op 	{ get; set; }
+	string 		Value 	{ get; set; }
+
+}
+
+
+class BaseExpression : IExpression
 {
 	
 	//Constructors
-	public Expression(){}
+	public BaseExpression(){}
 	
-	public Expression(FactType fact, Operator op, string value){
+	public BaseExpression(IFactType fact, IOperator op, string value){
 			
 		this.Fact = fact;
 		this.Op = op;
@@ -22,8 +31,29 @@ class Expression
 	}	
 
 	//Properties
-	public FactType Fact 	{ get; set; }
-	public Operator Op 	{ get; set; }
+	public IFactType Fact 	{ get; set; }
+	public IOperator Op 	{ get; set; }
+	public string 	Value 	{ get; set; }
+
+}
+
+class ConditionExpression : IExpression
+{
+	
+	//Constructors
+	public ConditionExpression(){}
+	
+	public ConditionExpression(IFactType fact, IOperator op, string value){
+			
+		this.Fact = fact;
+		this.Op = op;
+		this.Value = value;
+
+	}	
+
+	//Properties
+	public IFactType Fact 	{ get; set; }
+	public IOperator Op 	{ get; set; }
 	public string 	Value 	{ get; set; }
 
 }
