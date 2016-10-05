@@ -1,10 +1,8 @@
 using System;
-using System.IO;
-using System.Data;
-using System.Data.Odbc;
-using System.Collections.Generic;
 using System.Text;
+using System.Collections.Generic;
 
+namespace Com.Css.Csp.DataAcceptance.Darma.Model {
 
 public interface IRule
 {
@@ -62,4 +60,5 @@ public class SchemaRule : IRule
 
 }
 
+}
 

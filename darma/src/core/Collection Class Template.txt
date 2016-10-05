@@ -1,0 +1,52 @@
+using System;
+using System.Text;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace Com.Css.Csp.DataAcceptance.Darma.Model
+{
+
+	public class <COLLECTION_NAME>:ICollection
+	{
+	//Members
+		public string CollectionName;
+    		private ArrayList myArray = new ArrayList(); 
+
+	//Properties
+    		public Employee this[int index]
+		{
+        		get{return (Employee) myArray[index];}
+    		}
+
+    		public int Count
+		{
+        		get{return myArray.Count;}
+    		}
+	
+    		public object SyncRoot
+		{
+        		get{return this;}
+    		}
+
+    		public bool IsSynchronized
+		{
+        		get{return false;}
+    		}
+	
+	//Methods
+    		public IEnumerator GetEnumerator()
+		{
+        		return myArray.GetEnumerator();
+    		}
+
+    		public void Add(Employee newEmployee)
+		{
+        		myArray.Add(newEmployee);
+    		}
+
+    		public void CopyTo(Array a, int index)
+		{
+        		myArray.CopyTo(a, index);
+    		}
+	}
+}

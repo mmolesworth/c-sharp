@@ -1,10 +1,8 @@
 using System;
-using System.IO;
-using System.Data;
-using System.Data.Odbc;
-using System.Collections.Generic;
 using System.Text;
 
+
+namespace Com.Css.Csp.DataAcceptance.Darma.Model {
 
 public interface IOperator
 {
@@ -20,5 +18,7 @@ class StandardOperator
 	public string Symbol { get; set; }
 	
 	public string Description { get; set;}
+
+}
 
 }
