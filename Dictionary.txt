@@ -1,0 +1,5 @@
+            ICollection myDictionary = new Dictionary<string, int>();
+
+            string[] s = new string[10];
+
+            myDictionary.CopyTo(s, 0);
