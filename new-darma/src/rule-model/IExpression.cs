@@ -10,9 +10,8 @@ namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 	
 	//Methods
 		
-		String Interpret(IContext c);
-
-
+		void Visit(IExpressionVisitor visitor);
+		
 	} //end class
 
 } //end namespace

@@ -5,9 +5,13 @@ using System.Xml.Serialization;
 
 namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 {
-	public class Rule
+	public class Rule : Expression
 	{
-		
+
+
+	//Implemented members
+
+
 
 
 	} //end class

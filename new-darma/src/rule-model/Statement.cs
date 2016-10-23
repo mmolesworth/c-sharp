@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 
 namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 {
-	public class Statement : IExpression
+	public class Statement : Expression
 	{
 	//Members
 	
@@ -24,6 +24,9 @@ namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 			myCondition = condition;
 		}		
 
+	//Methods
+
+		
 	//Properties
 		public IExpression Subject
 		{

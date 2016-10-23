@@ -9,7 +9,12 @@ namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 	{
 	
 	//Methods
-		public abstract String Interpret(IContext c);
+		
+		public void Visit(IExpressionVisitor visitor)
+		{
+			visitor.Visit(this);
+		}
+
 			
 	//Properties
 

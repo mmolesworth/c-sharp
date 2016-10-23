@@ -9,11 +9,11 @@ namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 	{
 		
 	//Implemented members
-		public override String Interpret(IContext c)
-		{
-			return "NOT IMPLEMENTED";
-		}
 
+								
+
+			
+		      
 	} //end class
 
 } //end namespace

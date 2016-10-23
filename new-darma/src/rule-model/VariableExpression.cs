@@ -22,11 +22,10 @@ namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 			myFact = fact;
 		}
 
-
-	//Implemented members
-		public override String Interpret(IContext c)
+	//Properties
+		public IFact Fact
 		{
-			return "NOT IMPLEMENTED";
+			get { return myFact; }
 		}
 
 

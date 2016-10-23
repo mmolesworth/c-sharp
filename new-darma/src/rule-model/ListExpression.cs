@@ -11,19 +11,8 @@ namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 		List<Expression> expressions;
 
 	//Methods
-		public override String Interpret(IContext c)
-		{
-			StringBuilder sb = new StringBuilder();
 
-			foreach(IExpression e in expressions)
-			{
-				sb.Append(e.Interpret(c));
-			}
-			
-			return sb.ToString();
-
-		}
-			
+		
 	//Properties
 
 		public List<Expression> Expressions

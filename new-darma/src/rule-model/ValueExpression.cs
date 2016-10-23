@@ -22,18 +22,8 @@ namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 		}
 
 	//Implemented members
-		public override string Interpret(IContext c)
-		{	
-			if(String.IsNullOrEmpty(myValue))
-			{
-				return "EMPTY VALUE";
-			}
-			else
-			{
-				return myValue;
-			}
-		}
 
+		
 	} //end class
 
 } //end namespace
