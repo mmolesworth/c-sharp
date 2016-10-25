@@ -1,0 +1,14 @@
+<Window x:Class="WpfApplicationHelloWorld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Background="IndianRed">
+        <Label Height="28" Margin="77,28,81,0" Name="lblHello" 
+               VerticalAlignment="Top" Opacity="0.5" 
+               Background="SlateGray" Foreground="White">
+               Label</Label>
+        <Button Height="23" Margin="77,66,126,0" Name="btnHello" 
+                VerticalAlignment="Top" Click="btnHello_Click" 
+                Opacity="0.5">Say Hello</Button>
+    </Grid>
+</Window>
