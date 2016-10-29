@@ -7,14 +7,11 @@ namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 {
 	public abstract class Expression : IExpression
 	{
-	
+
 	//Methods
 		
-		public void Visit(IExpressionVisitor visitor)
-		{
-			visitor.Visit(this);
-		}
-
+		public abstract void Visit(IExpressionVisitor visitor);
+		
 			
 	//Properties
 

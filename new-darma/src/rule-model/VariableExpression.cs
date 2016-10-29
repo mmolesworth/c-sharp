@@ -22,6 +22,12 @@ namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 			myFact = fact;
 		}
 
+	//Methods
+		public override void Visit(IExpressionVisitor visitor)
+		{
+			visitor.Visit(this);
+		}
+
 	//Properties
 		public IFact Fact
 		{

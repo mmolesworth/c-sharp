@@ -10,7 +10,10 @@ namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 
 
 	//Implemented members
-
+		public override void Visit(IExpressionVisitor visitor)
+		{
+			visitor.Visit(this);
+		}
 
 
 

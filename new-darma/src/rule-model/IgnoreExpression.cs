@@ -6,34 +6,27 @@ using System.Xml.Serialization;
 
 namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 {
-	public class ValueExpression : Expression
+	public class IgnoreExpression : Expression
 	{
-		String myValue;
+		private String _symbol;
 
 	//Constructors
-		public ValueExpression()
+		public IgnoreExpression()
 		{
 			//KEEP PARAMTERLESS CONSTRUCTOR
 		}
 
-		public ValueExpression(String value)
+		public IgnoreExpression(String symbol)
 		{
-			myValue = value;
+			_symbol = symbol;
 		}
 
 	//Implemented members
 		public override void Visit(IExpressionVisitor visitor)
 		{
-			visitor.Visit(this);
+			
 		}
 	
-	//Properties
-		public String Value
-		{
-			get { return myValue; }
-
-			set { myValue = Value; }
-		}
 
 	} //end class
 

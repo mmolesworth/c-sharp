@@ -25,7 +25,10 @@ namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 		}		
 
 	//Methods
-
+		public override void Visit(IExpressionVisitor visitor)
+		{
+			visitor.Visit(this);
+		}
 		
 	//Properties
 		public IExpression Subject

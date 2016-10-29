@@ -10,12 +10,21 @@ namespace Com.Css.Csp.DataAcceptance.Darma.RuleModel
 	
 	//Methods
 
-	String Visit(IExpression exp);
+
+	void Visit(ListExpression exp);
+
+	void Visit(OperatorExpression exp);
+
+	void Visit(Statement exp);
+
+	void Visit(Rule exp);
+
+	void Visit(ValueExpression exp);
+
+	void Visit(VariableExpression exp);
 	
-	//Properties
-
-
-
+	String GetResult();
+	
 	} //end class
 
 } //end namespace
